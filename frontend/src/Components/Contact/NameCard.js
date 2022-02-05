@@ -41,6 +41,7 @@ const StyledDiv = styled.div`
     box-shadow: -25px 25px 15px -20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: 1s 0.2s;
+    max-width: 90vw;
     h2{
         font-size: 25px;
         font-weight: 800;
@@ -150,7 +151,7 @@ const StyledDiv = styled.div`
 
 const NameCard = () => {
     return (<StyledDiv className="nameCard">
-        <h2>&#x5F90;&#x6176;&#x6BC5;<span>CHING-YI HSU</span></h2>
+        <h2>&#x5F90;&#x6176;&#x6BC5;<span>CHING-YI HSU (Erkin)</span></h2>
         <hr />
         <div className="email info">
             <FontAwesomeIcon className='fa' icon={faEnvelope}/>

@@ -82,6 +82,23 @@ const StyledMain = styled.div`
             font-weight: bold;
             text-decoration: none;
         }
+        a:after{
+            content: "";
+            border: solid 2px transparent;
+            position: absolute;
+            width: 0;
+            height: 0;
+            bottom: -2px;
+            left: -2px;
+            transition: width 0.5s ease-out 0s;
+        }
+        a:hover:after{
+            width: 100%;
+            height: 100%;
+            color: none;
+            border-bottom-color: #597FC7;
+        }
+
     }
 `
 const Main = () => {
@@ -103,23 +120,23 @@ const Main = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide slide2">
-                    <img src={codepenProject} alt="" className="codepen"/>
-                    <Title word='CodePen Self Project'/>
+                    <img src={codepenProject} alt="" className="codepen" />
+                    <Title word='CodePen Self Project' />
                     <div className="sub">Stop Watch</div>
                     <div className="des">Using JS to draw on HTML canvas and detect user mouse movement to create a interactive as well as functional stop watch.</div>
                     <a href="https://codepen.io/hci_71/pen/OJmgoBo" target='_blank' rel="noreferrer">Link</a>
                 </SwiperSlide>
                 <SwiperSlide className="slide slide3">
-                    <img src={ptt} alt="" className="codepen"/>
-                    <Title word='Team Project'/>
+                    <img src={ptt} alt="" className="codepen" />
+                    <Title word='Team Project' />
                     <div className="sub">Modern PTT</div>
                     <div className="des">Using React, GraphQL and MongoDB as structure. Collaborating with others to fulfill the forum with complete functions,
-                    I was in charge of layout design and frontend data management. </div>
+                        I was in charge of layout design and frontend data management. </div>
                     <a href="https://modern-ptt.herokuapp.com/intro" target='_blank' rel="noreferrer">Link</a>
                 </SwiperSlide>
                 <SwiperSlide className="slide slide4">
-                    <img src={ntut} alt="" className="codepen"/>
-                    <Title word='Self Project'/>
+                    <img src={ntut} alt="" className="codepen" />
+                    <Title word='Self Project' />
                     <div className="sub">NTUT Exhibition (Fullend Application)</div>
                     <div className="des">An one page Web application with frontend and backend. Created using REACT, Express, and deployed on AWS EC2. From frontend to backend and deployment, including layout, animation, data transfer, SSL, and etc, these process are all done by my own.</div>
                     <a href="https://ntutcvd107.com/" target='_blank' rel="noreferrer">Link</a>

@@ -8,7 +8,7 @@ const StyledDiv = styled.div`
     display: none;
     position: absolute;
     left: 50%;
-    bottom: 10%;
+    bottom: 20%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     border: solid 1px #999;
